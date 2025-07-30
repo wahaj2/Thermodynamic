@@ -24,13 +24,12 @@ import webbrowser
 
 # Configure logging for console output
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s %(levelname)s: %(message)s')
-logging.info(f"Starting ThermodynamicDashboard application at {datetime.now().strftime('%I:%M %p PKT, %B %d, %Y')}")
+logging.info("Starting ThermodynamicDashboard application at 04:35 PM PKT, July 29, 2025")
 
 # Initialize app with custom stylesheet
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP], suppress_callback_exceptions=True)
 app.css.append_css({"external_url": "assets/styles.css"})  # Serve CSS from assets folder
 
-# Expose the Flask server instance for Gunicorn
 server = app.server
 
 # Ensure 'assets' folder exists relative to the script
@@ -148,7 +147,7 @@ app.layout = dbc.Container([
     ])
 ], fluid=True)
 
-# Utility functions (unchanged from original)
+# Utility functions
 def convert_value(value):
     try:
         if isinstance(value, str):
@@ -1201,7 +1200,6 @@ def update_feature_plot(x_feat, y_feat, table_data, active_tab):
     )
 
 if __name__ == '__main__':
-    import os
     port = int(os.getenv('PORT', 8050))  # Use Render's PORT or default to 8050 locally
     webbrowser.open_new(f"http://localhost:{port}/")
     app.run_server(debug=True, host='0.0.0.0', port=port)
