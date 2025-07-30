@@ -12,3 +12,4 @@ umap-learn
 flask
 werkzeug
 gunicorn
+uvicorn
