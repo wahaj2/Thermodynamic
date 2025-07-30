@@ -1,0 +1,83 @@
+.modern-bg {
+    background: linear-gradient(135deg, #f0f4f8, #d9e7ec);
+    min-height: 100vh;
+}
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.btn-primary {
+    background-color: #2ecc71;
+    border-color: #27ae60;
+    border-radius: 8px;
+    padding: 8px 20px;
+    transition: background-color 0.3s;
+}
+.btn-primary:hover {
+    background-color: #27ae60;
+    border-color: #219653;
+}
+.upload-box {
+    border: 2px dashed #3498db;
+    border-radius: 10px;
+    background-color: #ffffff;
+    transition: border-color 0.3s;
+}
+.upload-box:hover {
+    border-color: #2980b9;
+    background-color: #f9fbfd;
+}
+.tab-content {
+    padding: 20px;
+}
+h1, h3, h4, h5 {
+    color: #34495e;
+    font-weight: 600;
+}
+.dropdown {
+    border-radius: 8px;
+    border-color: #bdc3c7;
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #f8f9fa;
+}
+.graph-container {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.switch-label {
+    margin-right: 10px;
+    font-weight: 500;
+}
+.suggestion-box {
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    color: #856404;
+    position: relative;
+}
+.suggestion-box .close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    border: none;
+    background: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #856404;
+}
+.suggestion-box .close-btn:hover {
+    color: #664d03;
+}
+.suggestion-icon {
+    margin-right: 10px;
+    color: #856404;
+}
