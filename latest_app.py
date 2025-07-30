@@ -1200,4 +1200,4 @@ def update_feature_plot(x_feat, y_feat, table_data, active_tab):
 if __name__ == '__main__':
     port = 8050
     webbrowser.open_new(f"http://localhost:{port}/")
-    app.run_server(debug=True, port=port, host='0.0.0.0')
+    app.run_server(port=port, host='0.0.0.0')
